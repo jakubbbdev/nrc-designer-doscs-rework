@@ -1,6 +1,6 @@
 # 5. Animation
 
-← [Texture](04-Texture) · **5 / 12** · [Keyframes →](06-Keyframes)
+← [Texture](04-Texture) · **5 / 15** · [Keyframes →](06-Keyframes)
 
 ---
 
@@ -11,6 +11,31 @@ Bei der Animation beginnt der Spaß erst so richtig.
 Zuerst erstellst du eine Animation. Bei **Emotes** ist der **Name egal** — wenn es jedoch ein **Cosmetic** ist, **muss** sie `nrc.idle` heißen.
 
 ![Animation erstellen](images/image-11.png)
+
+## Animationsnamen für Cosmetics
+
+`nrc.idle` ist **Pflicht**. Zusätzlich kannst du Animationen für bestimmte Situationen anlegen — der Client spielt sie automatisch ab, sobald der Spieler das Passende tut:
+
+| Animation | Wird gespielt, wenn der Spieler … |
+|-----------|-----------------------------------|
+| `nrc.crawling` | kriecht |
+| `nrc.swimmidle` | im Wasser ist, aber nicht schwimmt |
+| `nrc.swimming` | schwimmt |
+| `nrc.flying` | fliegt (z.B. Elytra) |
+| `nrc.jumping` | nach oben springt |
+| `nrc.falling` | fällt |
+| `nrc.afk` | AFK ist |
+| `nrc.sitting` | sitzt |
+| `nrc.sneaking` | schleicht |
+| `nrc.running` | sprintet |
+| `nrc.walking` | läuft |
+| `nrc.quirk_1` … `nrc.quirk_4` | still steht — zufällige Extra-Animation zwischendurch |
+| `nrc.idle` | nichts von alledem tut |
+| `nrc.shop` | im Shop als Vorschau gezeigt wird (optional, sonst `nrc.idle`) |
+
+Die Liste (ohne `nrc.shop`) ist gleichzeitig die **Reihenfolge**: trifft mehreres zu, gewinnt das obere. Fehlt eine Animation, wird sie einfach übersprungen — am Ende landet der Client immer bei `nrc.idle`.
+
+> 💡 Wie oft die Quirks kommen, stellst du in der `.norisk.json` unter `animationSettings` ein → [Referenz](14-Referenz#quirks-animationsettings).
 
 ## Loop-Modi
 
@@ -36,4 +61,4 @@ Die **blaue Klammer** schreibt das Ende der Animation vor. Du kannst sie demnach
 
 ---
 
-← [Texture](04-Texture) · **5 / 12** · [Keyframes →](06-Keyframes)
+← [Texture](04-Texture) · **5 / 15** · [Keyframes →](06-Keyframes)

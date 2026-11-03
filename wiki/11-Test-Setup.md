@@ -1,6 +1,6 @@
 # 11. Test-Setup
 
-← [Export](10-Export) · **11 / 12** · [Ingame-Test →](12-Ingame-Test)
+← [Export](10-Export) · **11 / 15** · [Ingame-Test →](12-Ingame-Test)
 
 ---
 
@@ -61,6 +61,8 @@ Die `.norisk.json` für Emotes ist deutlich übersichtlicher als die für Cosmet
 
 ![Emote .norisk.json im Editor](images/image-34.png)
 
+> 📚 `category` bestimmt die Gruppe im Emote-Menü (`special`, `random`, `classic`, `funny`, `dance`). Alle Felder und die Extra-Einstellungen in der `.animation.json` (z.B. `disableOnMove`) findest du in der [14. Referenz](14-Referenz).
+
 ---
 
 ## `{name}.norisk.json` — Cosmetics
@@ -92,17 +94,8 @@ Für Cosmetics wird die Datei länger, da hier zusätzlich **Scale**, **Preview*
             "y": -1.0,
             "z": 0.0
         },
-        "adjustRotationWhenSwimmingOrFlying": false,
-        "adjustPositionWhenSkeaking": true,
-        "sneakingPositionOffset": {
-            "x": 0.0,
-            "y": 0.0,
-            "z": 0.0
-        },
-        "renderMode": "ORIGINAL",
-        "hash": null
+        "renderMode": "ORIGINAL"
     },
-    "layers": [],
     "features": [],
     "compatibleCosmetics": [],
     "rarity": "UNCOMMON",
@@ -111,6 +104,8 @@ Für Cosmetics wird die Datei länger, da hier zusätzlich **Scale**, **Preview*
 ```
 
 ![Cosmetic .norisk.json im Editor](images/image-35.png)
+
+> 📚 Welche `type`-Werte es gibt, steht in [13. Cosmetic-Typen](13-Cosmetic-Typen). Alle weiteren Felder (Regler, Farben, Varianten, Quirks …) findest du in der [14. Referenz](14-Referenz).
 
 ---
 
@@ -122,7 +117,7 @@ Die `.norisk.json` für Cosmetics kommt in **denselben Ordner** wie die restlich
 
 ![Cosmetic Folder Layout](images/image-36.png)
 
-Der gesamte Ordner wandert in den passenden ingame Ordner — der Pfad muss zum `path`-Feld in deiner `.norisk.json` passen:
+Der gesamte Ordner wandert in den passenden ingame Ordner. Trag als `path` den Ordnernamen ein — entscheidend für den Client ist aber, dass **alle Files gleich heißen wie die `.norisk.json`** (siehe unten):
 
 ![Ingame Cosmetic-Ordner 1](images/image-37.png)
 
@@ -142,4 +137,23 @@ Für Emotes hast du **zwei verschiedene Dateien**:
 
 ---
 
-← [Export](10-Export) · **11 / 12** · [Ingame-Test →](12-Ingame-Test)
+## Namensregeln
+
+Der Client findet deine Files **nur über den Dateinamen**. Halte dich deshalb an diese Regeln:
+
+| Regel | Beispiel |
+|-------|----------|
+| Model, Textur und Animation heißen **genau wie die `.norisk.json`** | `wings.norisk.json` → `wings.geo.json`, `wings.png`, `wings.animation.json` |
+| Nur **Kleinbuchstaben**, Ziffern, `_`, `-` und `.` | ✅ `pride_wings` · ❌ `PrideWings` (geht nur auf Windows!) |
+| Emote mit Gegenstand: Ordner und Files heißen gleich, `.geo.json` **und** `.png` sind beide Pflicht | `emotes/dripstone/dripstone.animation.json`, `dripstone.geo.json`, `dripstone.png` |
+| Particles: alle `*.particle.json` im Ordner werden geladen | `banhammer/trail.particle.json` |
+| Textur-Varianten liegen in `textures/` und brauchen `"multiTexture": true` | `wings/textures/red.png`, `wings/textures/blue.png` |
+| Übersetzungen kommen nach `lang/<sprache>.json`, neu laden mit **F3+T** | `lang/de_de.json` |
+
+> ⚠️ **Kein Ordnername darf der Anfang eines anderen sein** — z.B. `hat` und `hat2` nebeneinander. Sonst lädt `hat` auch die Particles von `hat2`. Lieber `hat_red` und `hat_blue`.
+
+> ⚠️ Jede `id` darf **nur einmal** vorkommen. Bei doppelten IDs gewinnt einfach eine der Dateien — ohne Fehlermeldung.
+
+---
+
+← [Export](10-Export) · **11 / 15** · [Ingame-Test →](12-Ingame-Test)

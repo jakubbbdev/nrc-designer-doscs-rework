@@ -1,6 +1,6 @@
 # 7. Molang
 
-← [Keyframes](06-Keyframes) · **7 / 12** · [Particle →](08-Particle)
+← [Keyframes](06-Keyframes) · **7 / 15** · [Particle →](08-Particle)
 
 ---
 
@@ -46,4 +46,4 @@ Animation läuft genau einmal durch und endet danach komplett.
 
 ---
 
-← [Keyframes](06-Keyframes) · **7 / 12** · [Particle →](08-Particle)
+← [Keyframes](06-Keyframes) · **7 / 15** · [Particle →](08-Particle)

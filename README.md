@@ -6,7 +6,7 @@ Komplette Doku zum Erstellen eigener **Emotes** & **Cosmetics** für **NoRiskCli
 
 ## 📖 → [Zum Wiki](https://github.com/NoRiskClient/nrc-designer-docs/wiki)
 
-Alle Inhalte (12 Kapitel, Screenshots, Beispiel-GIFs) liegen im Wiki dieses Repos.
+Alle Inhalte (15 Kapitel, Screenshots, Beispiel-GIFs) liegen im Wiki dieses Repos.
 
 ## 📥 Downloads
 
@@ -28,7 +28,7 @@ Die Designer-Assets werden bei jedem Update **automatisch** als Release veröffe
 │   └── nrc-cosmetics/          ← Source-Ordner, wird vom Workflow gezippt
 ├── assets/
 │   └── nrc_default_emote_model.bbmodel
-├── wiki/                       ← Wiki-Pages (Home, _Sidebar, Kapitel 01-12, images)
+├── wiki/                       ← Wiki-Pages (Home, _Sidebar, Kapitel 01-15, images)
 │                                  wird automatisch ins .wiki.git gespiegelt
 └── .github/workflows/
     ├── release.yml             ← zippt designer/ + bbmodel → Release "latest"
@@ -53,6 +53,9 @@ Die Designer-Assets werden bei jedem Update **automatisch** als Release veröffe
 | 10 | [Export](https://github.com/NoRiskClient/nrc-designer-docs/wiki/10-Export) |
 | 11 | [Test-Setup](https://github.com/NoRiskClient/nrc-designer-docs/wiki/11-Test-Setup) |
 | 12 | [Ingame-Test](https://github.com/NoRiskClient/nrc-designer-docs/wiki/12-Ingame-Test) |
+| 13 | [Cosmetic-Typen](https://github.com/NoRiskClient/nrc-designer-docs/wiki/13-Cosmetic-Typen) |
+| 14 | [Referenz](https://github.com/NoRiskClient/nrc-designer-docs/wiki/14-Referenz) |
+| 15 | [Blockbench-Plugin](https://github.com/NoRiskClient/nrc-designer-docs/wiki/15-Blockbench-Plugin) |
 
 ## Fragen?
 

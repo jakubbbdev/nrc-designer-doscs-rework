@@ -51,7 +51,7 @@ Beide Files werden **automatisch** aus dem [Source-Repo](https://github.com/NoRi
 ### Kapitel
 
 1. **[Grundlagen](01-Grundlagen)** — Blockbench, GeckoLib & NRC Default Template installieren
-2. **[Aufbau](02-Aufbau)** — Das 7-Knochen-System verstehen
+2. **[Aufbau](02-Aufbau)** — Das Knochen-System verstehen
 3. **[Model](03-Model)** — Cubes & UVs richtig setzen
 4. **[Texture](04-Texture)** — Style-Guide (16x / 32x)
 5. **[Animation](05-Animation)** — Animation erstellen, Loop-Modi, Timeline
@@ -62,6 +62,12 @@ Beide Files werden **automatisch** aus dem [Source-Repo](https://github.com/NoRi
 10. **[Export](10-Export)** — GeckoLib-Export für Emotes & Cosmetics
 11. **[Test-Setup](11-Test-Setup)** — `.norisk.json` schreiben & Files einsortieren
 12. **[Ingame-Test](12-Ingame-Test)** — Designer-Commands & Live-Preview
+
+### Nachschlagen
+
+13. **[Cosmetic-Typen](13-Cosmetic-Typen)** — Alle Typen, wo sie sitzen & Buddys
+14. **[Referenz](14-Referenz)** — Alle Felder der `.norisk.json` & Emote-Einstellungen
+15. **[Blockbench-Plugin](15-Blockbench-Plugin)** — Unser Plugin für Rig, Emote-Settings & Export
 
 ---
 

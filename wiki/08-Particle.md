@@ -1,6 +1,6 @@
 # 8. Particle
 
-← [Molang](07-Molang) · **8 / 12** · [Sound →](09-Sound)
+← [Molang](07-Molang) · **8 / 15** · [Sound →](09-Sound)
 
 ---
 
@@ -42,4 +42,4 @@ Wenn jetzt die Timeline abgespielt wird, sollten die Particle ebenfalls gezeigt 
 
 ---
 
-← [Molang](07-Molang) · **8 / 12** · [Sound →](09-Sound)
+← [Molang](07-Molang) · **8 / 15** · [Sound →](09-Sound)

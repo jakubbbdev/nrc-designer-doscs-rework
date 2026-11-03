@@ -1,14 +1,25 @@
 # 2. Aufbau
 
-← [Grundlagen](01-Grundlagen) · **2 / 12** · [Model →](03-Model)
+← [Grundlagen](01-Grundlagen) · **2 / 15** · [Model →](03-Model)
 
 ---
 
 Gerade wenn du Emotes mit Gegenständen oder Cosmetics erstellen willst, ist die **Struktur deines Modells** besonders wichtig. Falsche Hierarchie = später nicht animierbar.
 
-## Das 7-Knochen-System
+## Das Knochen-System
 
-Wir benutzen ein **6**, bzw. mittlerweile **7-Knochen-System** — heißt: alles was du erstellen willst, **muss in einen dieser Knochen**. Erkennbar sind diese Gruppen am Präfix `armor` vor dem Namen. Sie finden sich nur in den **Unterordnern** des Templates.
+Alles was du erstellen willst, **muss in einen dieser Knochen**. Erkennbar sind diese Gruppen am Präfix `armor` vor dem Namen. Sie finden sich nur in den **Unterordnern** des Templates.
+
+| Knochen | Bewegt sich mit |
+|---------|-----------------|
+| `armorHead` | Kopf |
+| `armorBody` | Oberkörper |
+| `armorRightArm` / `armorLeftArm` | Armen |
+| `armorRightLeg` / `armorLeftLeg` | Beinen |
+| `armorRightBoot` / `armorLeftBoot` | Füßen (z.B. für `SHOES`) |
+| `armorRightArmSlim` / `armorLeftArmSlim` | Armen bei **schmalen Skins** (Alex-Modell) — nicht im Template, aber vom Client unterstützt und im [Blockbench-Plugin](15-Blockbench-Plugin) enthalten |
+
+> 💡 Auch [Buddys](13-Cosmetic-Typen#buddys) brauchen einen `armor`-Ordner (z.B. `armorBody`), obwohl sie nicht am Spieler hängen — nur Cubes darin zählen zur Größe des Buddys.
 
 ![Die 7 Armor-Knochen im Outliner](images/image-3.png)
 
@@ -26,6 +37,10 @@ Wenn Cubes **außerhalb** des Player-Rigs sein sollen — z.B. für **Terrain** 
 
 ![Cubes außerhalb des Rigs](images/image-5.png)
 
+> ⚠️ Das gilt nur für **Emotes**. Bei **Cosmetics** werden ausschließlich Cubes in `armor…`-Ordnern gerendert — alles außerhalb bleibt unsichtbar.
+
+> 📚 Welche Knochen-Namen der Client sonst noch besonders behandelt (Slim-Arme, `bipedRig`, Gegenstände in der Hand, Mitspieler bei interaktiven Emotes …): → [14. Referenz – Spezielle Knochen](14-Referenz#spezielle-knochen)
+
 ## Pivot-Punkte & Rigging
 
 > ⚠️ **WICHTIG:** Wenn du diese später angenehm animieren willst, solltest du beim Modeln die **Pivot-Punkte der Folder richtig setzen** und alle Parts, die du animieren möchtest, **einzeln riggen** — denn du kannst nur **Folder, nicht Cubes** animieren.
@@ -36,4 +51,4 @@ Wenn Cubes **außerhalb** des Player-Rigs sein sollen — z.B. für **Terrain** 
 
 ---
 
-← [Grundlagen](01-Grundlagen) · **2 / 12** · [Model →](03-Model)
+← [Grundlagen](01-Grundlagen) · **2 / 15** · [Model →](03-Model)

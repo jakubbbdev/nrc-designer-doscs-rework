@@ -23,6 +23,14 @@
 
 ---
 
+**Nachschlagen**
+
+13. [Cosmetic-Typen](13-Cosmetic-Typen)
+14. [Referenz](14-Referenz)
+15. [Blockbench-Plugin](15-Blockbench-Plugin)
+
+---
+
 **Tools**
 
 - [Blockbench](https://www.blockbench.net/)

@@ -1,6 +1,6 @@
 # 1. Grundlagen
 
-← [Home](Home) · **1 / 12** · [Aufbau →](02-Aufbau)
+← [Home](Home) · **1 / 15** · [Aufbau →](02-Aufbau)
 
 ---
 
@@ -40,4 +40,4 @@ Um den ganzen Prozess zu beschleunigen, haben wir ein Template zum Erstellen von
 
 ---
 
-← [Home](Home) · **1 / 12** · [Aufbau →](02-Aufbau)
+← [Home](Home) · **1 / 15** · [Aufbau →](02-Aufbau)

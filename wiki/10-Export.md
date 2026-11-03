@@ -1,6 +1,6 @@
 # 10. Export
 
-← [Sound](09-Sound) · **10 / 12** · [Test-Setup →](11-Test-Setup)
+← [Sound](09-Sound) · **10 / 15** · [Test-Setup →](11-Test-Setup)
 
 ---
 
@@ -31,4 +31,4 @@ Alles wandert in **denselben Ordner**.
 
 ---
 
-← [Sound](09-Sound) · **10 / 12** · [Test-Setup →](11-Test-Setup)
+← [Sound](09-Sound) · **10 / 15** · [Test-Setup →](11-Test-Setup)

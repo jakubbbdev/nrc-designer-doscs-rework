@@ -1,6 +1,6 @@
 # 9. Sound
 
-← [Particle](08-Particle) · **9 / 12** · [Export →](10-Export)
+← [Particle](08-Particle) · **9 / 15** · [Export →](10-Export)
 
 ---
 
@@ -25,7 +25,7 @@ Beides kannst du einfach in **Audacity** einstellen.
 
 ## Sound im Modell einbinden
 
-### 1. Animate Effects Tab
+### 1. Animate Effects Tab 
 
 Wie bei [Particle](08-Particle), aber dieses Mal den **Sounds**-Tab statt Particle nutzen.
 
@@ -41,4 +41,4 @@ Die Sound-Datei kann ganz einfach unter **Effect** hinzugefügt werden — danac
 
 ---
 
-← [Particle](08-Particle) · **9 / 12** · [Export →](10-Export)
+← [Particle](08-Particle) · **9 / 15** · [Export →](10-Export)

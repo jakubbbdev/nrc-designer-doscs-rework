@@ -1,6 +1,6 @@
 # 4. Texture
 
-← [Model](03-Model) · **4 / 12** · [Animation →](05-Animation)
+← [Model](03-Model) · **4 / 15** · [Animation →](05-Animation)
 
 ---
 
@@ -14,4 +14,4 @@ Die Texturen sollten im **16x** oder **32x** Spektrum gehalten werden. **Zu deta
 
 ---
 
-← [Model](03-Model) · **4 / 12** · [Animation →](05-Animation)
+← [Model](03-Model) · **4 / 15** · [Animation →](05-Animation)

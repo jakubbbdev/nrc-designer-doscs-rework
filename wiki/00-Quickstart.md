@@ -57,6 +57,7 @@ Fertig.
 | Command `designer source` existiert nicht | Keine Designer-Permission → [Discord-Ticket](https://discord.com/channels/774271756549619722) |
 | `emote play` findet Datei nicht | Animation-Name im Command muss zum Dateinamen passen (ohne `.animation.json`) |
 | Crash beim Template öffnen | GeckoLib nicht installiert — Blockbench neu starten |
+| Neue Datei taucht nicht auf, obwohl Designer-Modus schon an ist | `/nrc designer source rescan` — neue Dateien werden erst nach einem Rescan erkannt |
 
 ---
 
