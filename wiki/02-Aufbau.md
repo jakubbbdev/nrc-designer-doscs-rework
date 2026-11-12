@@ -8,7 +8,7 @@ Gerade wenn du Emotes mit Gegenständen oder Cosmetics erstellen willst, ist die
 
 ## Das Knochen-System
 
-Alles was du erstellen willst, **muss in einen dieser Knochen**. Erkennbar sind diese Gruppen am Präfix `armor` vor dem Namen. Sie finden sich nur in den **Unterordnern** des Templates.
+Alles was du erstellen willst, **muss in einen dieser Knochen**. Erkennbar sind diese Gruppen am Präfix `armor` vor dem Namen. Sie liegen im Rig, das das [NRC-Plugin](01-Grundlagen#das-spieler-rig) bei jedem neuen Projekt anlegt — jeweils **unter** dem passenden `biped`-Knochen (z.B. `bipedHead → armorHead`).
 
 | Knochen | Bewegt sich mit |
 |---------|-----------------|
@@ -17,11 +17,15 @@ Alles was du erstellen willst, **muss in einen dieser Knochen**. Erkennbar sind 
 | `armorRightArm` / `armorLeftArm` | Armen |
 | `armorRightLeg` / `armorLeftLeg` | Beinen |
 | `armorRightBoot` / `armorLeftBoot` | Füßen (z.B. für `SHOES`) |
-| `armorRightArmSlim` / `armorLeftArmSlim` | Armen bei **schmalen Skins** (Alex-Modell) — nicht im Template, aber vom Client unterstützt und im [Blockbench-Plugin](15-Blockbench-Plugin) enthalten |
+| `armorRightArmSlim` / `armorLeftArmSlim` | Armen bei **schmalen Skins** (Alex-Modell) |
 
-> 💡 Auch [Buddys](13-Cosmetic-Typen#buddys) brauchen einen `armor`-Ordner (z.B. `armorBody`), obwohl sie nicht am Spieler hängen — nur Cubes darin zählen zur Größe des Buddys.
+> 💡 Mit **Rechtsklick in die Vorschau → Toggle Slim Arms** siehst du, wie dein Modell auf schmalen Armen sitzt.
 
-![Die 7 Armor-Knochen im Outliner](images/image-3.png)
+> 💡 [Buddys](13-Cosmetic-Typen#buddys) hängen nicht am Spieler — ihre Cubes kommen in einen eigenen Knochen **`armorBuddy`**, den du selbst anlegst.
+
+![Outliner mit `bipedRig` und allen `armor`-Knochen (Plugin-Rig)](images/plugin-outliner-bones.png)
+
+> ⚠️ Cubes **direkt** in einem `biped…`-Ordner sind ingame unsichtbar. Das Plugin warnt dich beim Export („Cubes outside a bone“) — schieb sie in einen `armor…`-Ordner oder einen eigenen Unterordner.
 
 ## Cubes richtig einsortieren
 

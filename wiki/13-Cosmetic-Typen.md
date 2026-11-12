@@ -39,7 +39,7 @@ Ein **Buddy** ist kein Teil des Spielers, sondern eine **eigene kleine Figur**, 
 
 ### Modell
 
-- Der Buddy steht **frei auf dem Boden** und bewegt sich nicht mit dem Spieler. Trotzdem gilt: alle Cubes kommen in **einen `armor`-Ordner** (z.B. `armorBody`). Cubes außerhalb eines `armor`-Ordners zählen nicht zur Größe — liegt gar nichts in einem `armor`-Ordner, wird der Buddy **nicht angezeigt**.
+- Der Buddy steht **frei auf dem Boden** und bewegt sich nicht mit dem Spieler. Alle Cubes kommen deshalb in den Knochen **`armorBuddy`**. Den gibt es im Plugin-Rig nicht — leg dir eine Gruppe mit genau diesem Namen an. Cubes außerhalb von `armorBuddy` zählen nicht zur Größe — liegt gar nichts darin, wird der Buddy **nicht angezeigt**.
 - Die Füße gehören auf **Höhe 0**. Schwebt das Modell darüber, schwebt der Buddy auch ingame.
 - Die Größe des Modells ist gleichzeitig seine **Hitbox**: daraus berechnet der Client, wo der Buddy hinpasst, wo sein Schatten liegt und wo der Name erscheint. Lange Gegenstände (Schwerter, Schläger …) machen die Hitbox mit größer.
 
@@ -62,6 +62,22 @@ Ein **Buddy** ist kein Teil des Spielers, sondern eine **eigene kleine Figur**, 
 `nrc.sneaking` und `nrc.crawling` werden bei Buddys **nicht** benutzt — beim Schleichen läuft er nur langsamer.
 
 > 💡 Laufen, Rennen, Schwimmen, Fliegen und die Idles als **Loop** anlegen. Quirks **nicht** loopen — sie spielen einmal und blenden dann zurück in `nrc.idle`. Solange ein Quirk läuft, bleibt der Buddy stehen. Im Wasser gibt es keine Quirks.
+
+### Wetter & Nacht (optional)
+
+Buddys können auf **Regen**, **Schnee** und **Nacht** reagieren. Dafür legst du zusätzliche Animationen mit dem Namen der Zone an:
+
+| Animation | Wann |
+|-----------|------|
+| `nrc.<zone>.start` | einmal, wenn der Buddy **in** die Zone kommt (z.B. es fängt an zu regnen) |
+| `nrc.<zone>.stop` | einmal, wenn der Buddy die Zone **verlässt** |
+| `nrc.<zone>.<animation>` | statt der normalen Animation, solange er in der Zone ist — z.B. `nrc.rain.walking`, `nrc.rain.idle`, `nrc.rain.sitting` |
+
+`<zone>` ist `rain`, `snow` oder `night`.
+
+Beispiel Regen: `nrc.rain.start` (Regenschirm aufspannen) → `nrc.rain.idle` / `nrc.rain.walking` (mit Schirm) → `nrc.rain.stop` (Schirm zuklappen).
+
+> 💡 Das ist **keine Pflicht**. Du kannst auch nur einzelne Zonen oder einzelne Animationen davon anlegen.
 
 ### `.norisk.json`
 

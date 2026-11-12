@@ -8,9 +8,22 @@ Bei der Animation beginnt der Spaß erst so richtig.
 
 ## Animation erstellen
 
-Zuerst erstellst du eine Animation. Bei **Emotes** ist der **Name egal** — wenn es jedoch ein **Cosmetic** ist, **muss** sie `nrc.idle` heißen.
+Das Plugin legt die erste Animation schon für dich an:
+
+- **Emote:** die Animation heißt wie dein Emote (z.B. `meinerstemote`).
+- **Cosmetic:** die Animation heißt `nrc.idle` und steht auf **Loop**.
+
+Weitere Animationen legst du im **Animate**-Modus links über **+** an.
 
 ![Animation erstellen](images/image-11.png)
+
+> 💡 Emote umbenennen? **File → Rename NoRisk Client Emote** ändert Projekt, Animation und alle Sound-IDs auf einmal.
+
+## Emote-Einstellungen
+
+Bei Emotes stellst du über **Animation → Edit NoRisk Client Emote Settings** ein, wie sich das Emote ingame verhält — z.B. ob es beim Laufen abbricht oder in der Ego-Perspektive sichtbar ist. Die gleichen Schalter findest du nochmal im [Export-Dialog](10-Export). Was jeder Schalter macht: [14. Referenz](14-Referenz#extra-einstellungen-in-der-animationjson-emotes).
+
+![Dialog „NRC NoRisk Client Emote Settings“](images/plugin-emote-settings.png)
 
 ## Animationsnamen für Cosmetics
 

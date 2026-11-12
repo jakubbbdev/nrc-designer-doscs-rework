@@ -4,7 +4,58 @@
 
 ---
 
-Je nach Permissions kannst du nun folgenden Command ausführen, um auf den neu angelegten Designer-Ordner zuzugreifen:
+Je nachdem, welchen Weg du in [11. Test-Setup](11-Test-Setup) gewählt hast:
+
+- **[A — Test-Ordner](#a--test-ordner)** → für alle, keine Rechte nötig
+- **[B — Designer-Ordner](#b--designer-ordner)** → mit Designer-Rechten, inklusive Shop-Ansicht
+
+---
+
+## A — Test-Ordner
+
+### Commands
+
+| Command | Was passiert |
+|---------|--------------|
+| `/nrc test` | Zeigt, was im Test-Ordner erkannt wurde — Emotes, Cosmetics und übersprungene Files mit Grund |
+| `/nrc test folder` | Zeigt den Pfad zum Test-Ordner mit **[Open]** (öffnen) und **[Copy]** (Pfad kopieren) |
+| `/nrc test reload` | Lädt den Ordner von Hand neu |
+| `/nrc test emote <name>` | Spielt ein Emote aus dem Test-Ordner ab — nochmal ausführen stoppt es |
+
+`<name>` ist der Dateiname ohne `.animation.json` (bzw. der Ordnername). **Tab** schlägt dir alle gefundenen Emotes vor.
+
+> 📸 **Screenshot folgt:** Chat-Ausgabe von `/nrc test` mit gefundenen Emotes und Cosmetics
+> <!-- TODO screenshot: images/test-list.png -->
+
+> 📸 **Screenshot folgt:** Emote läuft nach `/nrc test emote <name>`
+> <!-- TODO screenshot: images/test-emote-play.png -->
+
+### Cosmetics testen
+
+> 🚧 **Platzhalter:** Command zum Starten / Anziehen eines Test-Cosmetics wird noch ergänzt.
+> <!-- TODO: Command + Screenshot für Test-Cosmetics eintragen -->
+
+### Automatisch neu laden
+
+Der Client beobachtet den Test-Ordner. Sobald du eine Datei speicherst oder neu reinlegst, lädt er sie nach kurzer Pause neu und meldet im Chat **„[Test] Reloaded …“**. Du kannst also in Blockbench exportieren und direkt ingame weitertesten.
+
+Liegt beim Betreten eines Servers etwas im Test-Ordner, erinnert dich der Client im Chat daran.
+
+### Übersprungene Files
+
+Passt ein Name nicht (z.B. Großbuchstaben oder Leerzeichen), bekommst du einen Hinweis mit dem Grund und einem Namensvorschlag, z.B.:
+
+```
+Mein Emote  →  only a-z 0-9 . _ - allowed (try 'mein_emote')
+```
+
+> 👀 Alles aus dem Test-Ordner siehst **nur du**. Andere Spieler bekommen davon nichts mit.
+
+---
+
+## B — Designer-Ordner
+
+Mit Designer-Rechten schaltest du den Designer-Ordner so ein:
 
 ```
 /nrc designer source toggle
@@ -12,15 +63,15 @@ Je nach Permissions kannst du nun folgenden Command ausführen, um auf den neu a
 
 ![Command: designer source toggle](images/image-41.png)
 
-## Im Shop sehen
+### Im Shop sehen
 
 Wenn du alles richtig gemacht hast, sollten jetzt deine Cosmetics und Emotes **im Shop** angezeigt werden:
 
 ![Cosmetic im Shop](images/image-42.png)
 
-## Local Test — Cosmetics ausrüsten
+### Cosmetics lokal ausrüsten
 
-Du kannst Cosmetics auch **local** testen — also ausrüsten ohne sie wirklich zu besitzen:
+Du kannst Cosmetics **lokal** testen — also ausrüsten, ohne sie wirklich zu besitzen:
 
 ```
 /nrc cosmetics designer toggle <name>
@@ -28,9 +79,7 @@ Du kannst Cosmetics auch **local** testen — also ausrüsten ohne sie wirklich 
 
 ![Command: cosmetics designer toggle](images/image-43.png)
 
-## Local Test — Emotes abspielen
-
-Emotes natürlich genauso:
+### Emotes abspielen
 
 ```
 /nrc emote play <name>
@@ -38,7 +87,7 @@ Emotes natürlich genauso:
 
 ![Command: emote play](images/image-44.png)
 
-> 💡 **Neue Dateien hinzugefügt?** Solange der Designer-Modus an ist, werden neue Files erst nach einem Rescan gefunden:
+> 💡 **Neue Dateien hinzugefügt?** Im Designer-Ordner werden neue Files erst nach einem Rescan gefunden:
 >
 > ```
 > /nrc designer source rescan
@@ -46,7 +95,7 @@ Emotes natürlich genauso:
 >
 > Geänderte, schon vorhandene Files werden direkt neu gelesen.
 
-## Alle Designer-Commands
+### Alle Designer-Commands
 
 | Command | Was passiert |
 |---------|--------------|
@@ -65,28 +114,7 @@ Emotes natürlich genauso:
 | `/nrc emote list` | Alle Emotes auflisten |
 | `/nrc emote sound list` / `play` | Sounds auflisten / abspielen |
 
-> 👀 Alles, was du mit `/nrc cosmetics designer` anziehst, siehst **nur du**. Andere Spieler bekommen davon nichts mit.
-
-> ⚠️ Der Designer-Modus ersetzt **alle** NRC-Assets durch den Designer-Ordner. Lass deshalb den kompletten `nrc-cosmetics`-Ordner aus dem ZIP drin — sonst fehlen Texturen in der UI.
-
----
-
-## Ohne Permission testen: der Test-Ordner
-
-Für schnelle Tests gibt es zusätzlich den Ordner **`NoRiskClient/test`**. Dafür brauchst du **keine** Designer-Permission, und Änderungen werden **automatisch** neu geladen — kein Rescan nötig.
-
-| Command | Was passiert |
-|---------|--------------|
-| `/nrc test folder` | Öffnet den Test-Ordner |
-| `/nrc test reload` | Lädt den Ordner von Hand neu |
-| `/nrc test emote` | Listet alle Emotes im Test-Ordner |
-| `/nrc test emote <name>` | Spielt ein Emote aus dem Test-Ordner ab |
-
-So sortierst du ein:
-
-- **Einzelne `.animation.json`** direkt in den Ordner → wird als **Emote** erkannt.
-- **Ein Ordner** pro Emote oder Cosmetic, Files heißen wie der Ordner (`wings/wings.geo.json` …). Mit einer `.norisk.json`, die einen `type` hat, wird es ein **Cosmetic**, sonst ein **Emote**.
-- Erlaubt sind nur Kleinbuchstaben, Ziffern, `.`, `_` und `-` im Namen.
+> 👀 Alles, was du mit `/nrc cosmetics designer` anziehst, siehst **nur du**.
 
 ---
 
@@ -94,12 +122,16 @@ So sortierst du ein:
 
 | Problem | Lösung |
 |---------|--------|
-| Neue Datei taucht nicht auf | `/nrc designer source rescan` |
+| Test-Ordner: Emote wird nicht gefunden | `/nrc test` — zeigt, was erkannt und was übersprungen wurde |
+| Test-Ordner: Änderung kommt nicht an | `/nrc test reload` |
+| *„could not be played. Is the animation JSON valid?“* | Animation-Datei kaputt — neu aus Blockbench exportieren |
+| Designer-Ordner: neue Datei taucht nicht auf | `/nrc designer source rescan` |
 | `toggle <name>` sagt *Unknown cosmetic* | Einmal den Wardrobe öffnen, dann den Command nochmal ausführen |
 | Nach einem Rescan ist dein Outfit unsichtbar | Das Test-Cosmetic einmal aus- und wieder anziehen |
 | Cosmetic taucht gar nicht auf | Im Log (`logs/latest.log`) nach deinem Dateinamen suchen — fehlende/doppelte `id` oder kaputtes JSON stehen nur dort |
+| Cosmetic-Cubes ingame unsichtbar | Cubes liegen nicht in einem `armor…`-Ordner → [2. Aufbau](02-Aufbau) |
 | Auf Windows geht's, auf Mac/Linux fehlt die Textur | Dateiname hat Großbuchstaben — alles klein schreiben |
-| Particle erscheint am falschen Spieler | Particle immer an einen **Locator** hängen |
+| Particle erscheint am falschen Spieler | Particle immer an einen **Locator** hängen → [8. Particle](08-Particle#3-locator-wählen) |
 | Particle/Sound fehlt bei Loop-Emotes am Anfang | Keyframe nicht genau auf `0` oder auf das Ende legen |
 | Von mehreren Particles auf einem Keyframe kommt nur eins | Keyframes leicht versetzen |
 | UI sieht im Designer-Modus kaputt aus | Den kompletten `nrc-cosmetics`-Ordner im Designer-Ordner lassen |

@@ -2,7 +2,7 @@
 
 > by **Tinus aka. p2pe** ❤️
 
-Komplette Doku zum Erstellen eigener **Emotes** & **Cosmetics** für **NoRiskClient** — von Blockbench-Setup über GeckoLib-Export bis zum Ingame-Test.
+Komplette Doku zum Erstellen eigener **Emotes** & **Cosmetics** für **NoRiskClient** — von Blockbench und unserem eigenen Plugin bis zum Ingame-Test.
 
 ## 📖 → [Zum Wiki](https://github.com/NoRiskClient/nrc-designer-docs/wiki)
 
@@ -14,8 +14,13 @@ Die Designer-Assets werden bei jedem Update **automatisch** als Release veröffe
 
 | Datei | Direkt-Download |
 |-------|-----------------|
-| **Blockbench-Template** | [⬇ nrc_default_emote_model.bbmodel](https://github.com/NoRiskClient/nrc-designer-docs/releases/latest/download/nrc_default_emote_model.bbmodel) |
-| **Designer-Ordner (zum Testen)** | [⬇ nrc-cosmetics.zip](https://github.com/NoRiskClient/nrc-designer-docs/releases/latest/download/nrc-cosmetics.zip) |
+| **Designer-Ordner** (Designer-Rechte, Plugin-Vorlagen) | [⬇ nrc-cosmetics.zip](https://github.com/NoRiskClient/nrc-designer-docs/releases/latest/download/nrc-cosmetics.zip) |
+| Altes Blockbench-Template *(nicht mehr nötig)* | [⬇ nrc_default_emote_model.bbmodel](https://github.com/NoRiskClient/nrc-designer-docs/releases/latest/download/nrc_default_emote_model.bbmodel) |
+
+**Blockbench-Plugin:** in Blockbench **File → Plugins → Load Plugin from URL** →
+`https://raw.githubusercontent.com/NoRiskClient/nrc-blockbench-plugins/master/plugins/nrc_cosmetics/nrc_cosmetics.js`
+
+> ⚠️ Das Plugin lädt seine Emote-Vorlagen aus `nrc-cosmetics.zip` im `latest`-Release dieses Repos. Repo-Name und Asset-Name nicht ändern.
 
 🔖 Alle Versionen: https://github.com/NoRiskClient/nrc-designer-docs/releases
 

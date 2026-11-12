@@ -4,7 +4,11 @@
 
 ---
 
-📖 **Offizielle Doku:** [GeckoLib Molang Wiki](https://github.com/bernie-g/geckolib/wiki/Molang)
+🧭 **Im Plugin:** **Tools → Molang Guide** zeigt alle Funktionen mit **Live-Beispiel** am Rig. Wenn du Molang in ein Keyframe-Feld tippst, gibt's außerdem **Autovervollständigung** (z.B. `query.anim_time`, `math.sin`).
+
+![Molang Guide mit Live-Beispiel](images/plugin-molang-guide.png)
+
+📖 **Weiterlesen:** [GeckoLib Molang Wiki](https://github.com/bernie-g/geckolib/wiki/Molang) — der Client nutzt die gleiche Molang-Syntax.
 
 ## Was ist Molang?
 

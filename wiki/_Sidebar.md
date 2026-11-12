@@ -34,6 +34,7 @@
 **Tools**
 
 - [Blockbench](https://www.blockbench.net/)
+- [NRC-Plugin installieren](01-Grundlagen#nrc-plugin-installieren)
 - [Snowstorm](https://snowstorm.app/)
 - [Audacity](https://www.audacityteam.org/)
 - [UUID Generator](https://www.uuidgenerator.net/)
