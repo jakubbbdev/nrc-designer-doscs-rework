@@ -37,13 +37,13 @@ Angenommen du willst **Flügel** erstellen — dann kommen die Cubes dieser Flü
 
 ### Cubes außerhalb des Player-Rigs
 
-Wenn Cubes **außerhalb** des Player-Rigs sein sollen — z.B. für **Terrain** oder Gegenstände, die sich **NICHT** mit dem Main-Rig bewegen — kommen sie in einen Ordner **außerhalb** des Rigs.
+Wenn Cubes **außerhalb** des Player-Rigs sein sollen — z.B. für **Terrain** oder Gegenstände, die sich **NICHT** mit dem Main-Rig bewegen — kommen sie in einen Ordner **außerhalb** des Rigs. Den Namen dieses Ordners kannst du frei wählen — solange er **nur Kleinbuchstaben** enthält (z.B. `hammer`, nicht `Hammer`).
 
 ![Cubes außerhalb des Rigs](images/image-5.png)
 
 > ⚠️ Das gilt nur für **Emotes**. Bei **Cosmetics** werden ausschließlich Cubes in `armor…`-Ordnern gerendert — alles außerhalb bleibt unsichtbar.
 
-> 📚 Welche Knochen-Namen der Client sonst noch besonders behandelt (Slim-Arme, `bipedRig`, Gegenstände in der Hand, Mitspieler bei interaktiven Emotes …): → [14. Referenz – Spezielle Knochen](14-Referenz#spezielle-knochen)
+> 📚 Welche Knochen-Namen der Client sonst noch besonders behandelt (Slim-Arme, `bipedRig`, `armorBuddy`, Mitspieler bei interaktiven Emotes …): → [14. Referenz – Spezielle Knochen](14-Referenz#spezielle-knochen)
 
 ## Pivot-Punkte & Rigging
 

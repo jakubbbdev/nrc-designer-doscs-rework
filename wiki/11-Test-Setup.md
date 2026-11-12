@@ -26,8 +26,7 @@ Der Ordner liegt unter `<Minecraft-Ordner>/NoRiskClient/test` und wird vom Clien
 /nrc test folder
 ```
 
-> 📸 **Screenshot folgt:** Chat-Ausgabe von `/nrc test folder` mit [Open] / [Copy]
-> <!-- TODO screenshot: images/test-folder-command.png -->
+![Chat-Ausgabe von /nrc test folder mit [Open] und [Copy]](images/test-folder-command.png)
 
 ### Emotes
 
@@ -57,8 +56,7 @@ NoRiskClient/test/
     └── meine_wings.animation.json
 ```
 
-> 🚧 **Platzhalter:** Wie ein Cosmetic aus dem Test-Ordner gestartet / angezogen wird (Command), wird noch ergänzt.
-> <!-- TODO: Ablauf + Command für Test-Cosmetics eintragen -->
+Angezogen wird ein Test-Cosmetic per Command: `/nrc test cosmetic <name>` → [12. Ingame-Test](12-Ingame-Test#a--test-ordner).
 
 ### Was der Client prüft
 

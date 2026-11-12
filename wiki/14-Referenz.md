@@ -76,18 +76,19 @@ Mit `features` stellen Spieler im Wardrobe per Regler Größe oder Position selb
 | `X_AXIS` | Position links/rechts |
 | `Y_AXIS` | Position hoch/runter |
 
-> 🚧 *Beispiel-JSON für `range` folgt.*
-
 ### Quirks (`animationSettings`)
 
-Steuert, wie oft die Quirk-Animationen (`nrc.quirk_1` … `nrc.quirk_4`, siehe [5. Animation](05-Animation#animationsnamen-für-cosmetics)) abgespielt werden.
+Steuert, wie oft die einzelnen Quirk-Animationen (`nrc.quirk_1` … `nrc.quirk_4`, siehe [5. Animation](05-Animation#animationsnamen-für-cosmetics)) gewählt werden. Pro Quirk gibst du eine `probability` an — das ist eine **Gewichtung**: höhere Zahl = kommt öfter.
 
-| Feld | Beschreibung |
-|------|--------------|
-| `probability` | Wahrscheinlichkeit, dass ein Quirk kommt |
-| `timeRange` | Zeitspanne zwischen zwei Quirks |
+```json
+"animationSettings": {
+  "nrc.quirk_1": { "probability": 2 },
+  "nrc.quirk_2": { "probability": 1 },
+  "nrc.quirk_3": { "probability": 1 }
+}
+```
 
-> 🚧 *Beispiel-JSON folgt.*
+Hier kommt `nrc.quirk_1` doppelt so oft wie `nrc.quirk_2` oder `nrc.quirk_3`.
 
 ---
 
@@ -150,7 +151,13 @@ Den Loop-Modus (`loop`) nimmt das Plugin direkt aus Blockbench (Play Once / Loop
 
 | `rig2` (Kopie des Rigs) | Mitspieler bei [interaktiven Emotes](#interaktive-emotes) |
 
-> 🚧 **Platzhalter:** weitere Knochen mit Sonderbedeutung (z.B. Gegenstand in der Hand) werden noch ergänzt.
+### Eigene Knochen außerhalb des Rigs
+
+Ordner **außerhalb** des Spieler-Rigs (z.B. für Gegenstände oder Terrain bei Emotes, siehe [2. Aufbau](02-Aufbau#cubes-außerhalb-des-player-rigs)) kannst du **frei benennen** — einzige Regel: **nur Kleinbuchstaben**.
+
+| ✅ | ❌ |
+|----|----|
+| `hammer`, `stuhl_lehne`, `wolke2` | `Hammer`, `StuhlLehne` |
 
 ---
 

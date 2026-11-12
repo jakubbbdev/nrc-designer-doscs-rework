@@ -21,19 +21,17 @@ Je nachdem, welchen Weg du in [11. Test-Setup](11-Test-Setup) gewählt hast:
 | `/nrc test folder` | Zeigt den Pfad zum Test-Ordner mit **[Open]** (öffnen) und **[Copy]** (Pfad kopieren) |
 | `/nrc test reload` | Lädt den Ordner von Hand neu |
 | `/nrc test emote <name>` | Spielt ein Emote aus dem Test-Ordner ab — nochmal ausführen stoppt es |
+| `/nrc test cosmetic <name>` | Zieht ein Cosmetic aus dem Test-Ordner an — nochmal ausführen zieht es aus |
 
-`<name>` ist der Dateiname ohne `.animation.json` (bzw. der Ordnername). **Tab** schlägt dir alle gefundenen Emotes vor.
+`<name>` ist der Dateiname ohne Endung bzw. der Ordnername. **Tab** schlägt dir alle gefundenen Emotes und Cosmetics vor.
 
-> 📸 **Screenshot folgt:** Chat-Ausgabe von `/nrc test` mit gefundenen Emotes und Cosmetics
-> <!-- TODO screenshot: images/test-list.png -->
+![Alle /nrc test Commands mit Tab-Vervollständigung](images/test-commands.png)
 
-> 📸 **Screenshot folgt:** Emote läuft nach `/nrc test emote <name>`
-> <!-- TODO screenshot: images/test-emote-play.png -->
+### Beispiel
 
-### Cosmetics testen
+Ordner öffnen, Export reinziehen, der Client meldet **„Reloaded 1 emote(s)“** — dann abspielen:
 
-> 🚧 **Platzhalter:** Command zum Starten / Anziehen eines Test-Cosmetics wird noch ergänzt.
-> <!-- TODO: Command + Screenshot für Test-Cosmetics eintragen -->
+![Test-Ordner mit Emote, Reload-Meldung und /nrc test emote](images/test-emote-play.png)
 
 ### Automatisch neu laden
 
